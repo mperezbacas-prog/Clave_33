@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>Reserva — Clave 33</title>
+  <meta name="description" content="Botellas de reserva y destilados contados en Clave 33.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html" aria-current="page">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a href="carta-clasicos.html">Clásicos</a></li>
+              <li><a href="carta-autor.html">De autor</a></li>
+              <li><a aria-current="page" href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="seccion seccion--titulo">
+      <div class="contenedor">
+        <h1>Reserva</h1>
+        <p>Botellas que no se reponen. Se sirven en medidas de 30 ml, solas o con un hielo tallado a mano.</p>
+      </div>
+    </section>
+
+    <section class="seccion candado" id="candado">
+      <div class="contenedor">
+        <div class="candado__caja">
+          <h2>Esta parte todavía está cerrada</h2>
+          <p>
+            Las tres secciones de la carta se abren con la misma llave: la rueda de César
+            que está en la página principal de la carta. Se resuelve en menos de un minuto.
+          </p>
+          <a class="boton boton--lleno" href="carta.html">Ir a la rueda</a>
+          <p><button class="enlace-sutil" type="button" id="saltear">Prefiero entrar sin jugar</button></p>
+        </div>
+      </div>
+    </section>
+
+    <div data-protegido="carta" hidden>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="tragos">
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Malta escocesa 1998</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 34.000</span>
+            </div>
+            <p class="trago__receta">Islay, 24 años, turba fuerte</p>
+            <p class="trago__nota">Quedan once medidas. No se venden dos por persona.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Coñac de la casa</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 28.500</span>
+            </div>
+            <p class="trago__receta">Comprado en un remate en 1987</p>
+            <p class="trago__nota">Sin etiqueta. Nadie en la familia quiso averiguar de dónde venía.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Ron de Barbados 1999</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 22.700</span>
+            </div>
+            <p class="trago__receta">Envejecido en barrica de jerez</p>
+            <p class="trago__nota">Dulce y largo. El único de la vitrina que se recomienda sin reservas.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Mezcal tobalá</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 19.800</span>
+            </div>
+            <p class="trago__receta">Producción de doscientas botellas</p>
+            <p class="trago__nota">Ahumado y mineral. La número 33 es esta.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Vermut de 1966</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 26.300</span>
+            </div>
+            <p class="trago__receta">Encontrado en el sótano al mudar el taller</p>
+            <p class="trago__nota">Se sirve frío y solo. Estaba detrás de una pared que no figuraba en los planos.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Aguardiente de familia</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 31.000</span>
+            </div>
+            <p class="trago__receta">Traído por el abuelo Asmodeo desde Houska 1, Blatce-Doksy</p>
+            <p class="trago__nota">De una casa levantada sobre un pozo que alguien tapió hace setecientos años. Última botella.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="nota">
+          <p>
+            Las medidas de reserva se cobran aparte de la mesa y no entran en promociones.
+            Si querés reservar una botella entera para un grupo, escribinos antes por
+            <a href="contacto.html">contacto</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <button class="enlace-sutil" type="button" id="volverACerrar">Volver a cerrar la puerta y empezar de nuevo</button>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>Galería — Clave 33</title>
+  <meta name="description" content="Fotos de la entrada, el salón y la barra de Clave 33.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a href="carta-clasicos.html">Clásicos</a></li>
+              <li><a href="carta-autor.html">De autor</a></li>
+              <li><a href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html" aria-current="page">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="seccion seccion--titulo">
+      <div class="contenedor">
+        <h1>Galería</h1>
+        <p>Ocho fotos del lugar. No mostramos la fachada entera a propósito: parte del trato es que el bar siga siendo difícil de encontrar.</p>
+      </div>
+    </section>
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="filtros" role="group" aria-label="Filtrar fotos por sector">
+          <button class="filtro activo" type="button" data-filtro="todo">Todo</button>
+          <button class="filtro" type="button" data-filtro="entrada">La entrada</button>
+          <button class="filtro" type="button" data-filtro="salon">El salón</button>
+          <button class="filtro" type="button" data-filtro="tragos">Barra y tragos</button>
+          <button class="filtro" type="button" data-filtro="casa">La casa</button>
+        </div>
+
+        <ul class="galeria" id="galeria">
+          <li data-categoria="entrada">
+            <button class="galeria__boton" type="button">
+              <img class="foco--centro" src="imagenes/puerta.jpg" alt="Vidriera de la relojería Familia Asmodeo de noche, entre la niebla, con faroles encendidos y decenas de relojes antiguos en exhibición." loading="lazy">
+              <span class="galeria__pie">La puerta</span>
+            </button>
+          </li>
+          <li data-categoria="entrada">
+            <button class="galeria__boton" type="button">
+              <img class="foco--centro" src="imagenes/escalera.jpg" alt="Arco de piedra en penumbra que da paso a una escalera angosta iluminada apenas por un costado." loading="lazy">
+              <span class="galeria__pie">La escalera</span>
+            </button>
+          </li>
+          <li data-categoria="salon">
+            <button class="galeria__boton" type="button">
+              <img class="foco--centro" src="imagenes/primera-barra.jpg" alt="Salón en penumbra con vitrales altos iluminados, arañas de caireles y una fila de banquetas frente a la barra." loading="lazy">
+              <span class="galeria__pie">Primera barra</span>
+            </button>
+          </li>
+          <li data-categoria="salon">
+            <button class="galeria__boton" type="button">
+              <img class="foco--centro" src="imagenes/segunda-barra.jpg" alt="Barra con una araña de vidrio rojo colgando sobre las botellas y dos vitrales góticos encendidos detrás." loading="lazy">
+              <span class="galeria__pie">Segunda barra</span>
+            </button>
+          </li>
+          <li data-categoria="tragos">
+            <button class="galeria__boton" type="button">
+              <img class="foco--centro" src="imagenes/backbar.jpg" alt="Estantería de botellas iluminada por detrás, con copas alineadas y una vela encendida sobre la barra de metal." loading="lazy">
+              <span class="galeria__pie">Backbar</span>
+            </button>
+          </li>
+          <li data-categoria="tragos">
+            <button class="galeria__boton" type="button">
+              <img class="foco--centro" src="imagenes/trago.jpg" alt="Copa de absenta con una cucharilla apoyada en el borde y un terrón de azúcar ardiendo con llama azul." loading="lazy">
+              <span class="galeria__pie">Copa de la casa</span>
+            </button>
+          </li>
+          <li data-categoria="casa">
+            <button class="galeria__boton" type="button">
+              <img class="foco--alto" src="imagenes/asmodeo.jpg" alt="Retrato de un hombre de traje negro de tres piezas, de pie contra un fondo rojo oscuro." loading="lazy">
+              <span class="galeria__pie">Asmodeo</span>
+            </button>
+          </li>
+          <li data-categoria="casa">
+            <button class="galeria__boton" type="button">
+              <img class="foco--centro" src="imagenes/shedim.jpg" alt="Gato negro durmiendo sobre la barra, delante de los estantes de copas y botellas." loading="lazy">
+              <span class="galeria__pie">Shedim</span>
+            </button>
+          </li>
+        </ul>
+
+        <p class="pie__legal">Tocá una foto para verla en grande. Dentro del visor podés moverte con las flechas del teclado y salir con Escape.</p>
+      </div>
+    </section>
+
+    <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+      <button class="boton visor__cerrar" id="visorCerrar" type="button">Cerrar</button>
+      <img id="visorImg" src="imagenes/puerta.jpg" alt="">
+      <p class="visor__pie" id="visorPie" role="status"></p>
+      <div class="visor__controles">
+        <button class="boton" id="visorAnterior" type="button">Anterior</button>
+        <button class="boton" id="visorSiguiente" type="button">Siguiente</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>

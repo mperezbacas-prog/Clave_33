@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>Clave 33 — Bar oculto</title>
+  <meta name="description" content="Clave 33, un bar sin cartel. Carta de autor, coctelería clásica y una puerta que hay que saber encontrar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html" aria-current="page">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a href="carta-clasicos.html">Clásicos</a></li>
+              <li><a href="carta-autor.html">De autor</a></li>
+              <li><a href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="portada">
+      <div class="contenedor">
+        <div class="portada__interior">
+          <h1>Detrás del taller, el tiempo se comporta distinto</h1>
+          <p class="lema" data-descifrar="SIETE GENERACIONES DANDO CUERDA. NINGUNA PARTIDA DE DEFUNCION.">SIETE GENERACIONES DANDO CUERDA. NINGUNA PARTIDA DE DEFUNCION.</p>
+          <p class="portada__texto">
+            Clave 33 abre de noche; durante el día sigue siendo un taller de relojes.
+            El reloj de la vidriera marca una hora. Siempre marcó la misma hora.
+          </p>
+          <div class="acciones">
+            <a class="boton boton--lleno" href="carta.html">Ver la carta</a>
+            <a class="boton" href="contacto.html">Reservar una mesa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="fila">
+          <div>
+            <blockquote class="cita">Si encontraste la puerta, ya sabés lo suficiente.</blockquote>
+          </div>
+          <div>
+            <p>
+              La barra la atiende Asmodeo, séptimo de una familia que abrió su primera
+              relojería en 1800 y desde entonces no cerró ni un día. El oficio lo trajo el
+              abuelo, junto con una caja de herramientas y una botella que todavía está en
+              la vitrina. De ahí la obsesión con los tiempos: cada trago de la casa tiene un
+              momento exacto de agitado y un momento exacto de espera.
+            </p>
+            <p>
+              No tomamos reservas por teléfono después de las diez. No hay carta impresa:
+              se sirve lo que hay, y lo que hay cambia cada semana. El último pedido se toma
+              a las tres y treinta y tres. Después no se sirve nada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="titulo-seccion"><h2>Tres maneras de entrar</h2></div>
+        <div class="fila">
+          <article class="tarjeta">
+            <h3>Con reserva</h3>
+            <p>De miércoles a sábado, en turnos de dos horas. Mesas de hasta seis personas.</p>
+            <a href="contacto.html">Pedir una mesa</a>
+          </article>
+          <article class="tarjeta">
+            <h3>Sin reserva</h3>
+            <p>Quedan seis banquetas en la barra sin asignar. Se ocupan por orden de llegada, desde las 20:00.</p>
+            <a href="ubicacion.html">Cómo llegar</a>
+          </article>
+          <article class="tarjeta">
+            <h3>Con la clave</h3>
+            <p>Cada noche hay una contraseña distinta. Quien la sabe entra por el pasillo del fondo y evita la espera.</p>
+            <a href="#clave">Probar la clave</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="llaves">
+      <div class="contenedor">
+        <div class="titulo-seccion"><h2>Las dos llaves</h2></div>
+        <p>
+          Ni la carta ni la dirección están a la vista: cada una tiene su propio juego.
+          Con las dos resueltas aparece el trago que no figura en ninguna lista.
+        </p>
+        <div class="fila">
+          <article class="tarjeta llave" data-llave="carta">
+            <p class="llave__estado">Cerrado</p>
+            <h3>La rueda de César</h3>
+            <p>Un mensaje corrido en el alfabeto. Hay que darle cuerda a la rueda hasta el final. Entenderlo no alcanza.</p>
+            <a href="carta.html">Abrir la carta</a>
+          </article>
+          <article class="tarjeta llave" data-llave="ubicacion">
+            <p class="llave__estado">Cerrado</p>
+            <h3>Las tres preguntas</h3>
+            <p>Barrio, calle y altura, de a una por respuesta correcta. Todo lo que hay que saber está en este sitio.</p>
+            <a href="ubicacion.html">Buscar la dirección</a>
+          </article>
+        </div>
+        <p><button class="enlace-sutil" type="button" id="reiniciar">Borrar mi progreso y empezar de cero</button></p>
+      </div>
+    </section>
+
+    <section class="seccion" id="clave">
+      <div class="contenedor">
+        <div class="fila">
+          <div>
+            <div class="titulo-seccion"><h2>La clave de esta noche</h2></div>
+            <p>
+              La frase siempre se encuentra en algún lugar de nuestro taller. Si la tenés,
+              escribila acá y te decimos por dónde entrar.
+            </p>
+            <form class="clave" id="formClave">
+              <label class="saltar" for="claveEntrada">Contraseña de la noche</label>
+              <input type="text" id="claveEntrada" name="clave" placeholder="· · ·" autocomplete="off">
+              <button class="boton" type="submit">Decir la palabra</button>
+            </form>
+            <p class="respuesta" id="claveRespuesta" role="status"></p>
+          </div>
+          <div>
+            <div class="nota">
+              <h3>Lo único que le vamos a decir</h3>
+              <p>
+                Está en el mecanismo de todo reloj y nadie lo ve. No se raya.
+              </p>
+              <p>
+                Y no se raye: piénselo bien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>

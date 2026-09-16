@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>Contacto — Clave 33</title>
+  <meta name="description" content="Formulario de contacto y reservas de Clave 33.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a href="carta-clasicos.html">Clásicos</a></li>
+              <li><a href="carta-autor.html">De autor</a></li>
+              <li><a href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="seccion seccion--titulo">
+      <div class="contenedor">
+        <h1>Contacto</h1>
+        <p>Reservas, eventos privados y cualquier consulta. Contestamos de miércoles a sábado, entre las 00:00 y las 03:33.</p>
+      </div>
+    </section>
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <form class="formulario" id="formContacto" novalidate>
+
+          <div class="campo">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name">
+            <span class="error" id="error-nombre" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <span class="error" id="error-email" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo</label>
+            <select id="motivo" name="motivo">
+              <option value="">Elegí una opción</option>
+              <option value="reserva">Reservar una mesa</option>
+              <option value="evento">Evento privado</option>
+              <option value="carta">Consulta sobre la carta</option>
+              <option value="reloj">Vengo por un reloj del cajón</option>
+              <option value="otro">Otra cosa</option>
+            </select>
+            <span class="error" id="error-motivo" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="personas">Cuántas personas (opcional)</label>
+            <input type="number" id="personas" name="personas" min="1" max="12" placeholder="1 a 12">
+            <span class="error" id="error-personas" role="alert"></span>
+          </div>
+
+          <div class="campo campo--ancho">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Contanos el día, el horario y si tenés alguna restricción alimentaria."></textarea>
+            <span class="error" id="error-mensaje" role="alert"></span>
+          </div>
+
+          <div class="campo campo--check">
+            <input type="checkbox" id="acepta" name="acepta">
+            <label for="acepta">Acepto que usen mis datos para responder esta consulta.</label>
+            <span class="error" id="error-acepta" role="alert"></span>
+          </div>
+
+          <div class="campo campo--ancho">
+            <button class="boton boton--lleno" type="submit">Enviar el mensaje</button>
+          </div>
+
+          <div class="aviso" id="avisoEnviado" role="status">
+            <h3>Mensaje anotado</h3>
+            <p>
+              Te contestamos al correo que dejaste dentro de las 24 horas hábiles.
+              Si es para hoy, mejor llamanos al 011 6695-8872, después de medianoche.
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="nota">
+          <h3>Antes de escribir</h3>
+          <p>
+            Las reservas se confirman recién cuando respondemos: el formulario solo deja
+            el pedido anotado. Para grupos de más de seis personas pedimos una seña.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>

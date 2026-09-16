@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>De autor — Clave 33</title>
+  <meta name="description" content="Los nueve tragos de autor de Clave 33, cada uno con nombre de cliente.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html" aria-current="page">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a href="carta-clasicos.html">Clásicos</a></li>
+              <li><a aria-current="page" href="carta-autor.html">De autor</a></li>
+              <li><a href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="seccion seccion--titulo">
+      <div class="contenedor">
+        <h1>De autor</h1>
+        <p>Cada trago lleva el nombre de un cliente que no volvió a buscar su reloj.</p>
+      </div>
+    </section>
+
+    <section class="seccion candado" id="candado">
+      <div class="contenedor">
+        <div class="candado__caja">
+          <h2>Esta parte todavía está cerrada</h2>
+          <p>
+            Las tres secciones de la carta se abren con la misma llave: la rueda de César
+            que está en la página principal de la carta. Se resuelve en menos de un minuto.
+          </p>
+          <a class="boton boton--lleno" href="carta.html">Ir a la rueda</a>
+          <p><button class="enlace-sutil" type="button" id="saltear">Prefiero entrar sin jugar</button></p>
+        </div>
+      </div>
+    </section>
+
+    <div data-protegido="carta" hidden>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="tragos">
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Emilia Vaccaro</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 11.800</span>
+            </div>
+            <p class="trago__receta">Gin, manzanilla, cordial de manzana verde, tónica de tomillo</p>
+            <p class="trago__nota">Dejó un reloj de dama, cadena corta. Volvía todos los jueves hasta que dejó de volver.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Teodoro Nasi</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 12.600</span>
+            </div>
+            <p class="trago__receta">Rye añejado en casa, vermut de hierbas amargas, miel oscura, bitter de nuez</p>
+            <p class="trago__nota">Pidió un ajuste menor. Prometió pasar el lunes. Era 1934.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Sr. Lindqvist</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 13.100</span>
+            </div>
+            <p class="trago__receta">Whisky japonés, sake, jazmín, limón amarillo</p>
+            <p class="trago__nota">Nunca dio nombre de pila. El reloj tampoco tenía inscripción.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Josefa Arriola</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 12.400</span>
+            </div>
+            <p class="trago__receta">Ron añejo, granada especiada, lima, oporto flotado</p>
+            <p class="trago__nota">Trajo un reloj con rubí engarzado. Dijo que era de su madre. Quedó en la vitrina.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Ignacio Bermúdez</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 12.900</span>
+            </div>
+            <p class="trago__receta">Cognac, amaro, vermut oscuro, cacao amargo</p>
+            <p class="trago__nota">Relojero de otro barrio. Trajo el suyo a arreglar. Cortesía profesional, dijo.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">La Viuda Pardo</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 12.200</span>
+            </div>
+            <p class="trago__receta">Mezcal, licor de café, naranja quemada, sal ahumada</p>
+            <p class="trago__nota">Vino a las tres y treinta y tres. Insistió en esperar. La dejamos esperando.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Anselmo Grieco</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 11.400</span>
+            </div>
+            <p class="trago__receta">Pisco, maracuyá, clara, pimienta rosa</p>
+            <p class="trago__nota">Discutió el precio media hora. Se fue sin pagar y sin el reloj. Contiene huevo.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Clara Ithurbide</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 11.600</span>
+            </div>
+            <p class="trago__receta">Vodka de centeno, pera al laurel, vino blanco, soda</p>
+            <p class="trago__nota">Diecisiete años, reloj de comunión. El más chico del cajón.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Ficha 33</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 13.333</span>
+            </div>
+            <p class="trago__receta">Absenta, licor de anís, hielo tallado, agua fría</p>
+            <p class="trago__nota">No hay nombre en el sobre. Solo el número. Es el que más se pide.</p>
+          </article>
+        </div>
+        <div class="nota">
+          <p>
+            Los relojes siguen en el cajón del taller. Si reconoce un nombre, avísele a
+            quien lo atienda.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <button class="enlace-sutil" type="button" id="volverACerrar">Volver a cerrar la puerta y empezar de nuevo</button>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>La carta — Clave 33</title>
+  <meta name="description" content="Coctelería clásica, tragos de autor y botellas de reserva en Clave 33.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html" aria-current="page">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a href="carta-clasicos.html">Clásicos</a></li>
+              <li><a href="carta-autor.html">De autor</a></li>
+              <li><a href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="seccion seccion--titulo">
+      <div class="contenedor">
+        <h1>La carta</h1>
+        <p>Nadie te va a leer la carta. Ese es el trato.</p>
+      </div>
+    </section>
+
+    <section class="seccion candado" id="candado">
+      <div class="contenedor">
+        <div class="candado__caja">
+          <h2>La rueda de César</h2>
+          <p>
+            Todo lo que vas a tomar ya está escrito. Falta que lo entiendas. La rueda
+            no se arrastra de una punta a la otra: se le da cuerda, vuelta por vuelta,
+            como a cualquier cosa de esta casa.
+          </p>
+          <p class="rueda__texto" id="ruedaTexto">SH JHZH SV LZAHIH LZWLYHUKV</p>
+
+          <div class="rueda">
+            <div class="dial" id="dial" role="slider" tabindex="0"
+                 aria-label="Rueda de cifrado: dale cuerda con las flechas del teclado"
+                 aria-valuemin="0" aria-valuemax="52" aria-valuenow="0" aria-valuetext="cero vueltas">
+              <span class="dial__aguja"></span>
+              <svg class="dial__disco" id="dialDisco" viewBox="0 0 220 220" aria-hidden="true">
+            <circle cx="110" cy="110" r="104" class="dial__aro"/>
+            <circle cx="110" cy="110" r="52" class="dial__aro dial__aro--interno"/>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(0.0 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(0.0 110 110)">A</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(13.85 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(13.85 110 110)">B</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(27.69 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(27.69 110 110)">C</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(41.54 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(41.54 110 110)">D</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(55.38 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(55.38 110 110)">E</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(69.23 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(69.23 110 110)">F</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(83.08 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(83.08 110 110)">G</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(96.92 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(96.92 110 110)">H</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(110.77 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(110.77 110 110)">I</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(124.62 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(124.62 110 110)">J</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(138.46 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(138.46 110 110)">K</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(152.31 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(152.31 110 110)">L</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(166.15 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(166.15 110 110)">M</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(180.0 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(180.0 110 110)">N</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(193.85 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(193.85 110 110)">O</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(207.69 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(207.69 110 110)">P</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(221.54 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(221.54 110 110)">Q</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(235.38 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(235.38 110 110)">R</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(249.23 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(249.23 110 110)">S</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(263.08 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(263.08 110 110)">T</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(276.92 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(276.92 110 110)">U</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(290.77 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(290.77 110 110)">V</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(304.62 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(304.62 110 110)">W</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(318.46 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(318.46 110 110)">X</text>
+            <line x1="110" y1="14" x2="110" y2="32" class="dial__muesca" transform="rotate(332.31 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(332.31 110 110)">Y</text>
+            <line x1="110" y1="14" x2="110" y2="25" class="dial__muesca" transform="rotate(346.15 110 110)"/>
+            <text x="110" y="46" class="dial__letra" transform="rotate(346.15 110 110)">Z</text>
+            <polygon points="110,66 117,80 103,80" class="dial__marca"/>
+            <circle cx="110" cy="110" r="12" class="dial__centro"/>
+          </svg>
+            </div>
+
+            <div class="rueda__panel">
+              <p class="rueda__cuenta"><span class="rueda__numero" id="ruedaNumero">0</span> vueltas</p>
+              <div class="rueda__botones">
+                <button class="boton" type="button" id="dialMenos" aria-label="Aflojar una vuelta">&minus;</button>
+                <button class="boton" type="button" id="dialMas" aria-label="Dar una vuelta">+</button>
+              </div>
+              <p class="rueda__pista">La cuerda es de treinta y tres vueltas. El mecanismo da siete.</p>
+            </div>
+          </div>
+
+          <p class="respuesta" id="ruedaAviso" role="status"></p>
+          <button class="boton boton--lleno" type="button" id="ruedaBoton" hidden>Abrir la carta</button>
+          <p><button class="enlace-sutil" type="button" id="saltear">Prefiero ver la carta sin jugar</button></p>
+        </div>
+      </div>
+    </section>
+
+    <div data-protegido="carta" hidden>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="fila">
+          <article class="tarjeta">
+            <h3>Clásicos</h3>
+            <p>Recetas que ya estaban escritas cuando abrimos. Siete, ninguna nuestra.</p>
+            <a href="carta-clasicos.html">Ver los clásicos</a>
+          </article>
+          <article class="tarjeta">
+            <h3>De autor</h3>
+            <p>Nueve tragos con nombre de cliente. Ninguno de ellos volvió a buscar su reloj.</p>
+            <a href="carta-autor.html">Ver los de autor</a>
+          </article>
+          <article class="tarjeta">
+            <h3>Reserva</h3>
+            <p>Botellas viejas, algunas más que el bar. Se sirven solas o con un hielo.</p>
+            <a href="carta-reserva.html">Ver la reserva</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="fila">
+          <div>
+            <div class="titulo-seccion"><h2>Fuera de carta</h2></div>
+            <p>
+              Hay un trago más que no está en ninguna lista y que solo se sirve si lo pedís
+              por su nombre. El nombre aparece cuando tenés las dos llaves: la de la carta
+              y la de la dirección.
+            </p>
+            <p class="cifrado" id="secreto">· · ·</p>
+          </div>
+          <div>
+            <div class="nota">
+              <h3>Alérgenos e información</h3>
+              <p>
+                Cada trago indica si lleva lácteos, huevo, frutos secos o gluten. Si tenés
+                una restricción, avisale a la barra al sentarte: casi todo se puede rehacer.
+              </p>
+              <p>Tenemos cinco opciones sin alcohol, con el mismo trabajo que el resto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <button class="enlace-sutil" type="button" id="volverACerrar">Volver a cerrar la puerta y empezar de nuevo</button>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>

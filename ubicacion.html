@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>Ubicación — Clave 33</title>
+  <meta name="description" content="Cómo llegar a Clave 33, en Recoleta, Ciudad de Buenos Aires.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a href="carta-clasicos.html">Clásicos</a></li>
+              <li><a href="carta-autor.html">De autor</a></li>
+              <li><a href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html" aria-current="page">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="seccion seccion--titulo">
+      <div class="contenedor">
+        <h1>Ubicación</h1>
+        <p>Quien pregunta bien, no necesita preguntar dónde.</p>
+      </div>
+    </section>
+
+    <section class="seccion candado" id="candado">
+      <div class="contenedor">
+        <div class="candado__caja">
+          <h2>La dirección no se da. Se gana.</h2>
+          <p>Tres preguntas sobre el bar. Responda. Si acierta, la respuesta aparece sola.</p>
+
+          <div id="trivia">
+            <div class="pregunta">
+              <h3>¿Qué negocio funciona arriba del bar?</h3>
+              <div class="opciones">
+                <button class="opcion" type="button" data-correcta="si">Una relojería</button>
+                <button class="opcion" type="button">Una lavandería</button>
+                <button class="opcion" type="button">Una librería de usados</button>
+              </div>
+              <p class="pregunta__aviso" role="status"></p>
+              <span class="pregunta__premio" data-descifrar="BARRIO: RECOLETA" hidden></span>
+            </div>
+
+            <div class="pregunta">
+              <h3>¿Qué hora marca el reloj de la vidriera?</h3>
+              <div class="opciones">
+                <button class="opcion" type="button">12:00</button>
+                <button class="opcion" type="button" data-correcta="si">3:33</button>
+                <button class="opcion" type="button">21:15</button>
+              </div>
+              <p class="pregunta__aviso" role="status"></p>
+              <span class="pregunta__premio" data-descifrar="CALLE: VICENTE LOPEZ" hidden></span>
+            </div>
+
+            <div class="pregunta">
+              <h3>¿Desde qué año da cuerda la familia Asmodeo?</h3>
+              <div class="opciones">
+                <button class="opcion" type="button">1900</button>
+                <button class="opcion" type="button">1946</button>
+                <button class="opcion" type="button" data-correcta="si">1800</button>
+              </div>
+              <p class="pregunta__aviso" role="status"></p>
+              <span class="pregunta__premio" data-descifrar="ALTURA: 2180" hidden></span>
+            </div>
+          </div>
+
+          <p><button class="enlace-sutil" type="button" id="saltear">Necesito la dirección ahora, sin juegos</button></p>
+        </div>
+      </div>
+    </section>
+
+    <div data-protegido="ubicacion" hidden>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="fila">
+          <div>
+            <dl>
+              <div class="dato"><dt>Dirección</dt><dd>Vicente López 2180, Recoleta, CABA</dd></div>
+              <div class="dato"><dt>Entre calles</dt><dd>Entre Junín y Azcuénaga, vereda del cementerio</dd></div>
+              <div class="dato"><dt>Teléfono</dt><dd><a href="tel:+541166958872">011 6695-8872</a></dd></div>
+              <div class="dato"><dt>Correo</dt><dd><a href="mailto:mperezbacas@gmail.com">mperezbacas@gmail.com</a></dd></div>
+              <div class="dato"><dt>Subte</dt><dd>Línea H, estación Las Heras, a seis cuadras</dd></div>
+              <div class="dato"><dt>Colectivos</dt><dd>10, 37, 59, 60, 92, 110</dd></div>
+            </dl>
+          </div>
+          <div>
+            <img class="foto-lateral" src="imagenes/escalera.jpg" alt="Arco de piedra en penumbra que da paso a una escalera angosta iluminada apenas por un costado." width="1200" height="1600">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="titulo-seccion"><h2>Horarios</h2></div>
+        <div class="fila">
+          <div>
+            <dl>
+              <div class="dato"><dt>Miércoles</dt><dd>20:00 a 03:33</dd></div>
+              <div class="dato"><dt>Jueves</dt><dd>20:00 a 03:33</dd></div>
+              <div class="dato"><dt>Viernes</dt><dd>20:00 a 03:33</dd></div>
+              <div class="dato"><dt>Sábado</dt><dd>20:00 a 03:33</dd></div>
+              <div class="dato"><dt>Domingo, lunes y martes</dt><dd>Cerrado</dd></div>
+            </dl>
+          </div>
+          <div>
+            <div class="nota">
+              <h3>Antes de bajar</h3>
+              <p>
+                No golpee. La puerta se abre cuando corresponde, y no siempre corresponde.
+              </p>
+              <p>
+                Son doce escalones. Cuéntelos mientras baja. Si le dan trece, vuelva a
+                subir sin darse vuelta y salga a la calle: esa noche no era para usted.
+              </p>
+              <p>
+                Si no puede bajar escaleras, avísenos antes de venir. Hay otra entrada.
+                No la usamos seguido y preferimos no explicar por qué.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <button class="enlace-sutil" type="button" id="volverACerrar">Volver a cerrar la puerta y empezar de nuevo</button>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>

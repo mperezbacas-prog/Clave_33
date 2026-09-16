@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0609">
+  <title>Clásicos — Clave 33</title>
+  <meta name="description" content="Coctelería clásica servida en Clave 33: sazerac, negroni, vieux carré y más.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="index.html">
+        <span>Clave</span><span class="marca__numero">33</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-boton__icono"><span></span><span></span><span></span></span>
+        Menú
+      </button>
+
+      <nav class="nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul class="nav__lista">
+          <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
+          <li class="nav__item">
+            <div class="nav__grupo">
+              <a class="nav__enlace" href="carta.html" aria-current="page">La carta</a>
+              <button class="nav__toggle" aria-expanded="false" aria-label="Abrir secciones de la carta"><span>▼</span></button>
+            </div>
+            <ul class="submenu">
+              <li><a aria-current="page" href="carta-clasicos.html">Clásicos</a></li>
+              <li><a href="carta-autor.html">De autor</a></li>
+              <li><a href="carta-reserva.html">Reserva</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__enlace" href="galeria.html">Galería</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+
+    <section class="seccion seccion--titulo">
+      <div class="contenedor">
+        <h1>Clásicos</h1>
+        <p>Recetas que ya estaban escritas cuando abrimos.</p>
+      </div>
+    </section>
+
+    <section class="seccion candado" id="candado">
+      <div class="contenedor">
+        <div class="candado__caja">
+          <h2>Esta parte todavía está cerrada</h2>
+          <p>
+            Las tres secciones de la carta se abren con la misma llave: la rueda de César
+            que está en la página principal de la carta. Se resuelve en menos de un minuto.
+          </p>
+          <a class="boton boton--lleno" href="carta.html">Ir a la rueda</a>
+          <p><button class="enlace-sutil" type="button" id="saltear">Prefiero entrar sin jugar</button></p>
+        </div>
+      </div>
+    </section>
+
+    <div data-protegido="carta" hidden>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <div class="tragos">
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Sazerac</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 11.200</span>
+            </div>
+            <p class="trago__receta">Rye, absenta, azúcar, Peychaud's</p>
+            <p class="trago__nota">El más viejo de la casa. Y no es el más viejo de la casa.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Negroni</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 9.800</span>
+            </div>
+            <p class="trago__receta">Gin, vermut rojo, bitter</p>
+            <p class="trago__nota">Partes iguales. La única medida que no discutimos.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Old Fashioned</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 10.400</span>
+            </div>
+            <p class="trago__receta">Bourbon, azúcar, angostura, piel de naranja</p>
+            <p class="trago__nota">Se hace lento. No hay otra manera.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Vieux Carré</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 11.900</span>
+            </div>
+            <p class="trago__receta">Rye, cognac, vermut, Bénédictine</p>
+            <p class="trago__nota">Dos alcoholes que se llevan mal. Acá se entienden.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Martini</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 10.900</span>
+            </div>
+            <p class="trago__receta">Gin o vodka, vermut seco</p>
+            <p class="trago__nota">Se sirve helado. Se toma antes de que deje de estarlo.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Corpse Reviver Nº 2</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 11.600</span>
+            </div>
+            <p class="trago__receta">Gin, Lillet, curaçao, limón, absenta</p>
+            <p class="trago__nota">El nombre lo puso otro. Nosotros solo lo respetamos.</p>
+          </article>
+          <article class="trago">
+            <div class="trago__linea">
+              <h3 class="trago__nombre">Manhattan</h3>
+              <span class="trago__puntos"></span>
+              <span class="trago__precio">$ 10.600</span>
+            </div>
+            <p class="trago__receta">Rye, vermut rojo, angostura, cereza</p>
+            <p class="trago__nota">Perfecto desde hace un siglo. No lo tocamos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="seccion seccion--angosta">
+      <div class="contenedor">
+        <button class="enlace-sutil" type="button" id="volverACerrar">Volver a cerrar la puerta y empezar de nuevo</button>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__filas">
+        <div>
+          <h3>Clave 33</h3>
+          <p>Abajo de un taller de relojes<br>Ciudad de Buenos Aires<br>011 6695-8872</p>
+          <p><a href="ubicacion.html">Cómo encontrarnos</a></p>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <ul>
+            <li>Miércoles a sábado: 20:00 a 03:33</li>
+            <li>Último pedido: 03:33</li>
+            <li>Domingo, lunes y martes: cerrado</li>
+          </ul>
+        </div>
+        <div>
+          <h3>El sitio</h3>
+          <ul>
+            <li><a href="carta.html">La carta</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">
+        © <span class="anio">2026</span> Clave 33 · Todos los derechos reservados desde antes de que existieran.<br>
+        Beber con moderación. Prohibida la venta de alcohol a menores de 18 años.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>
